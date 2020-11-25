@@ -1,0 +1,29 @@
+<form (ngSubmit)="register(f)" autocomplete="off" #f="ngForm">
+    <div class="card text-center" id="register_card">
+        <h3 class="card-title">Register </h3>
+        <div class="form-group card text-center">
+
+            <input type="text" name="name" id="name" [(ngModel)]="name" placeholder="Name" required autofocus
+                class="form-control">
+        </div>
+
+        <div class="form-group">
+
+            <input type="email" name="email" id="email" [(ngModel)]="email" placeholder="Email" required
+                class="form-control">
+        </div>
+
+        <div class="form-group">
+
+            <input type="password" name="password" id="password" [(ngModel)]="password" placeholder="Password" required
+                class="form-control">
+        </div>
+        
+
+
+
+        <div class="form-group">
+            <button class="btn btn-primary" [disabled]="f.invalid"> SignUp</button>
+        </div>
+    </div>
+</form>
