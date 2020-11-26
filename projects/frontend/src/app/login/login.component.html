@@ -1,0 +1,28 @@
+
+
+<div class="card text-center" id="login_card">
+    <div class="card-body">
+        <h3 class="card-title">Login </h3>
+
+        <form (ngSubmit)="login(f)" autocomplete="off" #f="ngForm">
+            <div class="form-group">
+               
+                <input type="email" name="email" id="email" [(ngModel)]="email" placeholder="Email" required autofocus class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                
+                <input type="password" name="password" id="password" [(ngModel)]="password" placeholder="Password"  required
+                    class="form-control">
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-success" [disabled]="f.invalid" >Login</button>
+                <a routerLink="register" class="btn btn-info" role="button" aria-pressed="true">Signupr</a>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
