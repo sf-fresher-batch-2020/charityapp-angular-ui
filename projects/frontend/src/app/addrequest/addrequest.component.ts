@@ -18,16 +18,16 @@ export class AddrequestComponent implements OnInit {
   
   category: string;
   amount: string;
-  label: string;
+  
 
   addrequest(form:NgForm) {
-    let formData = {category: this.category, amount: this.amount , label:this.label };
+    let formData = {category: this.category, amount: this.amount  };
     console.log(JSON.stringify(formData));
    this.userService.addedrequest(formData).subscribe(res => {
       console.log(res);
      this.toastr.success("Request added Successfully");
       form.reset();
-     // this.router.navigate(['booklist']);
+     
     },err=>{
       console.error(err);
       this.toastr.error("Request adding failed");
