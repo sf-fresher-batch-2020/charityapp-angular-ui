@@ -47,5 +47,18 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.0.2"
-  }
+  },
+  "description": "```\r git clone https://github.com/sf-fresher-batch-2020/your-angular-project.git\r cd your-angular-project\r git checkout -M main\r npm install\r ng serve",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sf-fresher-batch-2020/cateringapp-angular-ui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sf-fresher-batch-2020/cateringapp-angular-ui/issues"
+  },
+  "homepage": "https://github.com/sf-fresher-batch-2020/cateringapp-angular-ui#readme",
+  "keywords": []
 }

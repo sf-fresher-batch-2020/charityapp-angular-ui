@@ -1,0 +1,32 @@
+<body id="bg">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <div class="container">
+                <h2 id="heading">ADD REQUEST</h2>
+
+                <form (ngSubmit)="addrequest(f)" #f="ngForm" autocomplete="off">
+
+                    <label>
+        <p class="label-txt">Category :</p>
+        <input type="text" name="category" class="input" id="category"  [(ngModel)]="category" required autofocus>
+        
+    </label>
+                    <label>
+      <p class="label-txt">Amount :</p>
+      <input type="text" name="amount" id="amount" class="input"  [(ngModel)]="amount" required>
+      
+    </label>
+
+    <label>
+        <p class="label-txt">Label :</p>
+        <input type="text" name="label" id="label" maxlength="10" class="input"  [(ngModel)]="label" required>
+        
+      </label>
+                  
+                    <button [disabled]="f.invalid">Add Request</button><br/>
+                    <a routerLink="/admin">Back</a>&nbsp;&nbsp; <a routerLink="/listrequest" style="text-decoration:underline;">ViewRequests</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>

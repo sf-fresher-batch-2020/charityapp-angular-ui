@@ -1,0 +1,38 @@
+<h2 id="heading">Request List</h2>
+<div class="container-fluid">
+    <div class="row">
+        <table class="table table-bordered" id="tablestyle">
+            <thead>
+                <tr>
+                    <th>S.no</th>
+
+                    <th>Request Id</th>
+
+                    <th>Category</th>
+
+                    <th>Amount</th>
+
+                   
+
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let request of requests;let i=index;">
+                    <td>{{i+1}}</td>
+
+                    
+                    <td>{{request.id}}</td>
+
+                    <td>{{request.category}}</td>
+
+                    <td>{{request.amount}}</td>
+
+
+                    <td><button type="button" class="btn btn-danger" (click)="deleteRequest(request.requestid)">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <a id="back" class="btn btn-success" routerLink="/admin">Back</a>
+    </div>
+</div>

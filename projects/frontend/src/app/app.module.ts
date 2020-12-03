@@ -13,8 +13,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
+import { ListrequestComponent } from './listrequest/listrequest.component';
+import { AddrequestComponent } from './addrequest/addrequest.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, RegisterComponent, LoginComponent, MenuComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, RegisterComponent, LoginComponent, MenuComponent, ListrequestComponent, AddrequestComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

@@ -20,7 +20,17 @@ export class UserService {
   register(user){
     let url= this.apiUrl +"/users";
     return this.http.post(url,user);
-    
-
+  }
+  addedrequest(request){
+    let url= this.apiUrl +"/requests";
+    return this.http.post(url,request);
+  }
+  getrequests(){
+    let url= this.apiUrl +"/requests";
+    return this.http.get(url);
+  }
+  deleterequest(id){
+    let url = this.apiUrl + "/books/" + id ;
+      return this.http.delete(url);
   }
 }
